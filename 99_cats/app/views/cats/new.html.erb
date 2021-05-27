@@ -1,0 +1,30 @@
+<h1>Create a new cat</h1>
+
+<form action = '<%= cats_url %>' method = 'POST'>
+
+<label for = "name">Name: </label>
+<input id ="name" type="text" name = "cat[name]"></input>
+<br/>
+<label for = "birthday">Birthday: </label>
+<input id ="birthday" type="text" name = "cat[birth_date]"></input>
+<br/>
+
+<label for = "color">Color: </label>
+<input id ="color" type="text" name = "cat[color]"></input>
+<br/>
+
+<label for = "desc">Description: </label>
+<input id ="desc" type="text" name = "cat[description]"></input>
+
+<br/>
+
+<label for = "sex">Sex: </label>
+
+<select id = "sex" name= cat[sex]>
+    <option value = "M" selected>M</option>
+    <option value = "F">F</option>
+</select>
+<br/>
+<button>Create Cat</button>
+
+</form>
